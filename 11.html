@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相对定位</title>
+	<style>
+		div{
+			width:300px;
+			height:300px;
+
+		}
+
+		.big{
+			border:2px solid orange;		
+		}
+
+		.small{
+			background:#ccc;
+			/*相对定位*/
+			position:relative;  /*一个元素一旦设置了相对定位，都变成块状元素*/
+			left:100px;
+			/*right:100px;
+			bottom:20px;*/
+		}
+
+		ul{
+			list-style:none;
+			padding:0;
+		}
+
+		li{
+			width:100px;
+			text-align:center;
+			line-height: 40px;
+			border:1px solid #ccc;
+			background:#f5f5f5;
+			position:relative;
+		}
+		li:hover{
+			/*background:pink;*/
+			left:1px;
+			top:1px;
+		}
+	</style>
+</head>
+<body>
+	<div class="big">
+		<div class="small"></div>
+	</div>
+
+
+	<ul>
+		<li>同志</li>
+		<li>同志</li>
+		<li>同志</li>
+		<li>同志</li>
+		<li>同志</li>
+	</ul>
+</body>
+</html>

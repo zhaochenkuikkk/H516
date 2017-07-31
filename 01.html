@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型之间的关系</title>
+	<style>
+		div{
+			/*border:1px solid red;*/
+			
+		}
+		span{
+			background:#ccc;
+			margin:10px;
+			padding:10px;
+
+		}
+
+		p{
+			width:100px;	
+			background:#369;
+		}
+
+		ul{
+			padding:0px;
+			list-style:none;
+			border:1px solid red;
+		}
+		li{
+
+			width:100px;
+			height:100px;
+			border:1px solid orange;
+			background:#ccc;
+
+			margin:10px;
+		}
+
+		.big{
+			width:300px;
+			height:300px;
+			background:red;
+
+			/*border:1px solid #ccc;*/
+			overflow:hidden;
+		}
+
+		.small{
+			width:100px;
+			height:100px;
+			background:blue;
+
+			margin:30px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span>同志</span>
+		<span>同志</span>
+		<span>同志</span>
+		<span>同志</span>
+
+		<p>老同志</p>
+	</div>
+
+	<hr>
+
+	<ul>
+		<li>同志</li>
+		<li>同志</li>
+		<li>同志</li>
+		<li>同志</li>
+		<li>同志</li>
+		<li>同志</li>
+	</ul>
+
+	<hr>
+
+	<div class="big">
+		<div class="small"></div>
+	</div>
+
+
+</body>
+</html>

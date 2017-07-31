@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<style>
+		.big{
+			position: relative;
+			/*left:0;
+			top:0;*/
+			width:600px;
+			padding:20px;
+			border:2px solid red;
+		}
+
+		.big div{
+			height:100px;
+			margin:0px 0px;
+			border:1px solid orange;
+		}
+
+		.box1{
+
+			background:red;
+			width:100px;
+			position:absolute;
+		/*	right:100px;
+			bottom:100px;*/
+			left:0px;
+			top:0px;
+		}
+
+		.box2{
+			background:green;
+		}
+		.box3{
+			background:purple;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="big">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+	</div>
+</body>
+</html>
